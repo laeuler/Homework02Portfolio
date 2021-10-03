@@ -25,7 +25,7 @@
 nav {
     display: flex;
     justify-content: flex-end;
-    background-color: #37373f;
+    background-color: #2A5559;
     
 }
   
@@ -35,6 +35,17 @@ nav {
     text-decoration: none;
     text-align: center;
     font-size: 150%;
+  }
+
+  nav ul li {
+      list-style: none;
+      margin: 0 20px;
+      display: inline;
+      text-transform: uppercase;
+  }
+
+  nav ul li:hover a {
+      background:#FF8B42;
   }
 /*========================================About me Section========================================*/
 .about-me {
@@ -47,8 +58,8 @@ nav {
 .about-me img {
     padding: 10px;
     flex-shrink: 1;
-    max-width: 400px;
-    max-height: 266px;
+    max-width: 300px;
+    max-height: 200px;
 }
 
 .about-me #detailsaboutme {
@@ -65,28 +76,30 @@ nav {
 }
 
 .highlight {
-    color: rgb(51, 113, 207);
+    color: #2A5559;
 }
 
 /*========================================My Work Section========================================*/
 /*Header of section*/
 #portfolio{
-    background-color:#37373f;
+    background-color: #2A5559;
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
+    text-transform: uppercase;
 }
 
 /*design of every card title*/
 .cardtitle {
     background-color: rgb(49, 52, 56, 0.85);
-    width: fit-content;
+    background-size: 200px;
     padding: 10px;
     position: absolute;
-    bottom: 30px;
+    bottom: 0px;
     left: 0px;
     color: white;
+    display: inherit;
 }
 
 .mywork {
@@ -100,9 +113,10 @@ nav {
     transition: 1s;
 }
 
+
 .mywork div {
     margin: 10px;
-    min-width: 400px;
+    min-width: 200px;
     padding: 5px;
 }
 
@@ -155,7 +169,4 @@ nav {
 /*========================================Contact Me========================================*/
 #contactme {
     display:none;
-    position: absolute;
-    left: 15px;
-    align-items: center;
 }
