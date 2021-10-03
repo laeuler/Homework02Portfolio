@@ -1,0 +1,161 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*========================================Header Design========================================*/
+.header {
+    padding: 5px;
+    background-color: #ffffff;
+    color: #ffffff;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+  
+.header h1 {
+    font-size: 80px;
+    background-color: rgb(49, 52, 56, 0.85);
+    width: fit-content;
+    padding-right: 25px;
+    padding-left: 10px;
+}
+
+/*========================================Navigation Bar Design========================================*/
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #37373f;
+    
+}
+  
+  nav a {
+    color: #ffffff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 150%;
+  }
+/*========================================About me Section========================================*/
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.about-me img {
+    padding: 10px;
+    flex-shrink: 1;
+    max-width: 400px;
+    max-height: 266px;
+}
+
+.about-me #detailsaboutme {
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 400px;
+}
+
+
+#signing {
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: cursive;
+}
+
+.highlight {
+    color: rgb(51, 113, 207);
+}
+
+/*========================================My Work Section========================================*/
+/*Header of section*/
+#portfolio{
+    background-color:#37373f;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+/*design of every card title*/
+.cardtitle {
+    background-color: rgb(49, 52, 56, 0.85);
+    width: fit-content;
+    padding: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    color: white;
+}
+
+.mywork {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*when I hover over a portfolio card, then I get a visual feedback*/
+.mywork div:hover {
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.mywork div {
+    margin: 10px;
+    min-width: 400px;
+    padding: 5px;
+}
+
+/*Surfreport*/
+#surfreport {
+    position: relative;
+    background-image: url("../images/surfreport.jpg");
+    flex-basis: 100%;
+    min-height: 500px;
+}
+
+/*LED Wall*/
+#ledwall {
+    position: relative;
+    background-image: url("../images/ledwall.jpg");
+    background-size: cover;
+    flex-basis: 400px;
+    flex-grow: 1;
+    min-height: 250px;
+}
+
+/*Calculator*/
+#calculator {
+    position: relative;
+    background-image: url("../images/calculator.jpg");
+    flex-basis: 400px;
+    flex-grow: 1;
+    min-height: 250px;
+}
+
+/*Puzzle*/
+#puzzle {
+    position: relative;
+    background-image: url("../images/puzzle.jpg");
+    flex-basis: 400px;
+    flex-grow: 1;
+    min-height: 250px;
+}
+
+/*run*/
+#run {
+    position: relative;
+    background-image: url("../images/run.jpg");
+    background-size: cover;
+    flex-basis: 400px;
+    flex-grow: 1;
+    min-height: 200px;
+}
+
+/*========================================Contact Me========================================*/
+#contactme {
+    display:none;
+    position: absolute;
+    left: 15px;
+    align-items: center;
+}
