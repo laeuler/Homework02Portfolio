@@ -21,36 +21,16 @@
 }
 
 /*========================================About me Section========================================*/
-.about-me {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
-}
+#picture {
+    max-width: 300px;
+    height: auto;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
 
-.about-me img {
-  padding: 10px;
-  flex-shrink: 1;
-  max-width: 300px;
-  max-height: 200px;
-}
-
-.about-me #detailsaboutme {
-  flex-grow: 2;
-  flex-shrink: 1;
-  flex-basis: 400px;
-}
-
-#signing {
-  font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: cursive;
-}
-
-.highlight {
-  color: #2a5559;
-}
-
+  .highlight {
+      color: #2a5559;
+  }
 /*========================================My Work Section========================================*/
 /*Header of section*/
 #portfolio {
