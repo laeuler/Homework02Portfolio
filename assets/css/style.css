@@ -21,7 +21,10 @@
 }
 
 /*========================================Side Nav Bar========================================*/
-#mobile-demo {
+.sidenav li > a {
+  color: white;
+}
+.sidenav li > a > i {
   color: white !important;
 }
 
@@ -36,19 +39,21 @@
 .highlight {
   color: #2a5559;
 }
+
+#signing {
+  font-size: 2rem;
+}
 /*========================================My Work Section========================================*/
+
+.cardview {
+  min-height: 500px;
+}
 .card-image img {
   opacity: 0.7;
 }
 
 /*when I hover over a portfolio card, then I get a visual feedback*/
-.mywork div:hover {
+.card:hover {
   opacity: 0.5;
   transition: 1s;
-}
-
-.mywork div {
-  margin: 10px;
-  min-width: 200px;
-  padding: 5px;
 }
