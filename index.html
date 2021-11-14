@@ -39,12 +39,10 @@
             >
           </li>
           <li>
-            <a href="#surfreport"
-              ><i class="material-icons left">apps</i>Work</a
-            >
+            <a href="#portfolio"><i class="material-icons left">apps</i>Work</a>
           </li>
           <li>
-            <a href="#contact-me"
+            <a href="#contactme"
               ><i class="material-icons left">connect_without_contact</i>Contact
               Me</a
             >
@@ -53,15 +51,26 @@
       </div>
     </nav>
     <!-- Navbar Medium down-->
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="#detailsaboutme">About Me</a></li>
-      <li><a href="#surfreport">Work</a></li>
-      <li><a href="#contact-me">Contact Me</a></li>
+    <ul class="sidenav teal darken-2" id="mobile-demo">
+      <li>
+        <a href="#detailsaboutme"
+          ><i class="material-icons left">account_circle</i>About Me</a
+        >
+      </li>
+      <li>
+        <a href="#portfolio"><i class="material-icons left">apps</i>Work</a>
+      </li>
+      <li>
+        <a href="#contactme"
+          ><i class="material-icons left">connect_without_contact</i>Contact
+          Me</a
+        >
+      </li>
     </ul>
 
     <section class="pagecontent">
       <!--Section About Me-->
-      <div class="container">
+      <div id="detailsaboutme" class="container">
         <h2>Hello & Welcome</h2>
         <div class="row s12 m6 l6">
           <div class="col">
@@ -96,52 +105,51 @@
       </div>
 
       <!--Section My Work-->
-      <h2 id="portfolio">Portfolio Work</h2>
-      <div class="mywork">
-        <!--SURF Report-->
-        <div id="surfreport">
-          <div class="cardtitle">
-            <h3>Surf Report</h3>
-            <p>MERN Stack</p>
-          </div>
-        </div>
+      <h2 class="white-text teal darken-4" id="portfolio">
+        <i class="medium material-icons left">apps</i>Portfolio Work
+      </h2>
 
-        <!--LED Wall-->
-        <div id="ledwall">
-          <div class="cardtitle">
-            <h3>LED Wall</h3>
-            <p>Node/Iot</p>
-          </div>
-        </div>
-
-        <!--Calculator-->
-        <div id="calculator">
-          <div class="cardtitle">
-            <h3>Calculator</h3>
-            <p>React/JavaScript/CSS</p>
-          </div>
-        </div>
-
-        <!--Puzzle-->
-        <div id="puzzle">
-          <div class="cardtitle">
-            <h3>Pastel Puzzels</h3>
-            <p>MERN Stacks</p>
-          </div>
-        </div>
-
-        <!--Run Buddy-->
-        <div id="run">
-          <div class="cardtitle">
-            <h3>Run Buddy</h3>
-            <p>HTML/CSS</p>
+      <!-- Cards to display my work -->
+      <div class="container">
+        <!--Workday Scheduler-->
+        <div class="row">
+          <!-- Work Day Scheduler -->
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="./assets/images/WorkDayScheduler.png" />
+                </div>
+                <div class="card-content white-text blue-grey darken-4">
+                  <span class="card-title">Work Day Scheduler</span>
+                  <p>
+                    Simple webpage helping you to maintain focus through hourly scheduling. Created with HTML, CSS and JavaScript, leveraging local
+                    memory.
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a
+                    class="teal-text text-darken-4"
+                    target="_blank"
+                    href="https://laeuler.github.io/Homework05WorkDayScheduler/"
+                    >Live Page</a
+                  >
+                  <a
+                    class="teal-text text-darken-4"
+                    target="_blank"
+                    href="https://github.com/laeuler/Homework05WorkDayScheduler"
+                    >GitHub Repo</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <!--Section Contact Me-->
       <nav class="teal darken-4">
-        <div class="nav-wrapper">
+        <div id="contactme" class="nav-wrapper">
           <ul class="right">
             <li>
               <a target="_blank" href="mailto:eulerlars@gmail.com"

@@ -20,43 +20,25 @@
   padding-left: 10px;
 }
 
+/*========================================Side Nav Bar========================================*/
+#mobile-demo {
+  color: white !important;
+}
+
 /*========================================About me Section========================================*/
 #picture {
-    max-width: 300px;
-    height: auto;
-    padding-right: 10px;
-    padding-top: 10px;
-  }
-
-  .highlight {
-      color: #2a5559;
-  }
-/*========================================My Work Section========================================*/
-/*Header of section*/
-#portfolio {
-  background-color: #2a5559;
-  color: white;
+  max-width: 300px;
+  height: auto;
+  padding-right: 10px;
   padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  text-transform: uppercase;
 }
 
-/*design of every card title*/
-.cardtitle {
-  background-color: rgb(49, 52, 56, 0.85);
-  background-size: 200px;
-  padding: 10px;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  color: white;
-  display: inherit;
+.highlight {
+  color: #2a5559;
 }
-
-.mywork {
-  display: flex;
-  flex-wrap: wrap;
+/*========================================My Work Section========================================*/
+.card-image img {
+  opacity: 0.7;
 }
 
 /*when I hover over a portfolio card, then I get a visual feedback*/
@@ -70,52 +52,3 @@
   min-width: 200px;
   padding: 5px;
 }
-
-/*Surfreport*/
-#surfreport {
-  position: relative;
-  background-image: url("../images/surfreport.jpg");
-  flex-basis: 100%;
-  min-height: 500px;
-}
-
-/*LED Wall*/
-#ledwall {
-  position: relative;
-  background-image: url("../images/ledwall.jpg");
-  background-size: cover;
-  flex-basis: 400px;
-  flex-grow: 1;
-  min-height: 250px;
-}
-
-/*Calculator*/
-#calculator {
-  position: relative;
-  background-image: url("../images/calculator.jpg");
-  flex-basis: 400px;
-  flex-grow: 1;
-  min-height: 250px;
-}
-
-/*Puzzle*/
-#puzzle {
-  position: relative;
-  background-image: url("../images/puzzle.jpg");
-  flex-basis: 400px;
-  flex-grow: 1;
-  min-height: 250px;
-}
-
-/*run*/
-#run {
-  position: relative;
-  background-image: url("../images/run.jpg");
-  background-size: cover;
-  flex-basis: 400px;
-  flex-grow: 1;
-  min-height: 200px;
-}
-
-/*========================================Contact Me========================================*/
-
