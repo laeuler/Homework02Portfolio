@@ -1,119 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Lars Euler</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--Header including navigation bar-->
     <header class="header">
-        <h1 id="myname">Lars Euler</h1>
+      <h1 id="myname">Lars Euler</h1>
     </header>
 
     <!--Navigation Bar-->
-    <nav class="navigation">
-        <ul>
-            <li><a href="#detailsaboutme">About Me</a></li>
-            <li><a href="#surfreport">Work</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
+    <!-- Navbar medium up -->
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#detailsaboutme">About Me</a></li>
+          <li><a href="#surfreport">Work</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
         </ul>
+      </div>
     </nav>
+    <!-- Navbar Medium down-->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#detailsaboutme">About Me</a></li>
+      <li><a href="#surfreport">Work</a></li>
+      <li><a href="#contact-me">Contact Me</a></li>
+    </ul>
 
     <section class="pagecontent">
-        <!--Section About Me-->
-        <article class="about-me">
-            <img
-              src="./assets/images/profilepicture.jpg"
-              alt="picture of Lars Euler"
-              class="float-left"
-            />
-            <div id="detailsaboutme">
-                <h2>About Me</h2>
-                <p>
-                Hello and Welcome to my Page. <br>
-                My Name is <span class="highlight">Lars Euler</span>. I am <span class="highlight">based in Berlin</span> and currently working as a <span class="highlight">Senior Strategy & Innovation Consultant at SAP</span>. I spent the last 5 years of
-                my professional career as a internal Consultant coaching frameworks to
-                </p>
-                <ul class="list">
-                    <li>understand, define and prioritize customer needs</li>
-                    <li>build frictionless customer experiences</li>
-                    <li>build scalable and sustainable business models</li>
-                    <li>manage an innovation portfolio and de-risk ideas</li>
-                    <li>work and set goals in an iterative, feedback-driven way</li>
-                    <li>set up an innovation culture for sustainable growth</li>
-                </ul>
-                <p>by combining methodical knowledge with cognitive science and change management.</p>
-                <p>I felt the need to build viable prototypes on my own. So I signed up for the 
-                <span class="highlight">ESMT Coding Bootcamp</span>. 
-                This page became reality as one of the projects during the bootcamp. Feel free to take a look at the portfolio projects I created so far or contact me through one of my channels.<br>
-                <br>Looking forward to the exchange<br><br>
-                <span class="highlight" id="signing">Lars</span>
-                </p>
-            </div>
-        </article>
-
-        <!--Section My Work-->
-        <h2 id="portfolio">Portfolio Work</h2>
-        <div class="mywork">
-            <!--SURF Report-->
-            <div id="surfreport">
-                <div class="cardtitle">
-                    <h3>Surf Report</h3>
-                    <p>MERN Stack</p>
-                </div>
-            </div>
-
-            <!--LED Wall-->
-            <div id="ledwall">
-                <div class="cardtitle">
-                    <h3>LED Wall</h3>
-                    <p>Node/Iot</p>
-                </div>
-            </div>
-
-            <!--Calculator-->
-            <div id="calculator">
-                <div class="cardtitle">
-                    <h3>Calculator</h3>
-                    <p>React/JavaScript/CSS</p>
-                </div>
-            </div>
-
-            <!--Puzzle-->
-            <div id="puzzle">
-                <div class="cardtitle">
-                    <h3>Pastel Puzzels</h3>
-                    <p>MERN Stacks</p>
-                </div>
-            </div>
-
-            <!--Run Buddy-->
-            <div id="run">
-                <div class="cardtitle">
-                    <h3>Run Buddy</h3>
-                    <p>HTML/CSS</p>
-                </div>
-            </div>           
-
+      <!--Section About Me-->
+      <article class="about-me">
+        <img
+          src="./assets/images/profilepicture.jpg"
+          alt="picture of Lars Euler"
+          class="float-left"
+        />
+        <div id="detailsaboutme">
+          <h2>About Me</h2>
+          <p>
+            Hello and Welcome to my Page. <br />
+            My Name is <span class="highlight">Lars Euler</span>. I am
+            <span class="highlight">based in Berlin</span> and currently working
+            as a
+            <span class="highlight"
+              >Senior Strategy & Innovation Consultant at SAP</span
+            >. I spent the last 5 years of my professional career as a internal
+            Consultant coaching frameworks to
+          </p>
+          <ul class="list">
+            <li>understand, define and prioritize customer needs</li>
+            <li>build frictionless customer experiences</li>
+            <li>build scalable and sustainable business models</li>
+            <li>manage an innovation portfolio and de-risk ideas</li>
+            <li>work and set goals in an iterative, feedback-driven way</li>
+            <li>set up an innovation culture for sustainable growth</li>
+          </ul>
+          <p>
+            by combining methodical knowledge with cognitive science and change
+            management.
+          </p>
+          <p>
+            I felt the need to build viable prototypes on my own. So I signed up
+            for the <span class="highlight">ESMT Coding Bootcamp</span>. This
+            page became reality as one of the projects during the bootcamp. Feel
+            free to take a look at the portfolio projects I created so far or
+            contact me through one of my channels.<br />
+            <br />Looking forward to the exchange<br /><br />
+            <span class="highlight" id="signing">Lars</span>
+          </p>
         </div>
-        
-        <!--Section Contact Me-->
-        <article id="contact-me">
-            <nav class="navigation">
-                <h2 id="contactme">Contact Me</h2>
-                <ul>
-                    <li><a href="mailto:eulerlars@gmail.com">Mail</a></li>
-                    <li><a href="https://www.linkedin.com/in/larseuler/">LinkedIn</a></li>
-                    <li><a href="https://github.com/laeuler">GitHub</a></li>
-                </ul>
-            </nav>
+      </article>
 
-        </article>
+      <!--Section My Work-->
+      <h2 id="portfolio">Portfolio Work</h2>
+      <div class="mywork">
+        <!--SURF Report-->
+        <div id="surfreport">
+          <div class="cardtitle">
+            <h3>Surf Report</h3>
+            <p>MERN Stack</p>
+          </div>
+        </div>
 
+        <!--LED Wall-->
+        <div id="ledwall">
+          <div class="cardtitle">
+            <h3>LED Wall</h3>
+            <p>Node/Iot</p>
+          </div>
+        </div>
+
+        <!--Calculator-->
+        <div id="calculator">
+          <div class="cardtitle">
+            <h3>Calculator</h3>
+            <p>React/JavaScript/CSS</p>
+          </div>
+        </div>
+
+        <!--Puzzle-->
+        <div id="puzzle">
+          <div class="cardtitle">
+            <h3>Pastel Puzzels</h3>
+            <p>MERN Stacks</p>
+          </div>
+        </div>
+
+        <!--Run Buddy-->
+        <div id="run">
+          <div class="cardtitle">
+            <h3>Run Buddy</h3>
+            <p>HTML/CSS</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Section Contact Me-->
+      <article id="contact-me">
+        <nav class="navigation">
+          <h2 id="contactme">Contact Me</h2>
+          <ul>
+            <li><a href="mailto:eulerlars@gmail.com">Mail</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/larseuler/">LinkedIn</a>
+            </li>
+            <li><a href="https://github.com/laeuler">GitHub</a></li>
+          </ul>
+        </nav>
+      </article>
     </section>
-</body>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
