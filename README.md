@@ -5,7 +5,7 @@ Updated Portfolio Page that showcases two of the assignments made in phase 1 of 
 # Links to the files
 
 - [GitHub Repository](https://github.com/laeuler/Homework02Portfolio)
-- [GitHub Page](https://laeuler.github.io/Homework02Portfolio/)
+- [GitHub Page](https://laeuler.github.io/personal-portfolio-page/)
 
 # Contributors
 
