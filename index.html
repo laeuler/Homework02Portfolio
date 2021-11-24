@@ -1,119 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Lars Euler</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--Header including navigation bar-->
     <header class="header">
-        <h1 id="myname">Lars Euler</h1>
+      <h1 id="myname">Lars Euler</h1>
     </header>
 
     <!--Navigation Bar-->
-    <nav class="navigation">
-        <ul>
-            <li><a href="#detailsaboutme">About Me</a></li>
-            <li><a href="#surfreport">Work</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
+    <!-- Navbar medium up -->
+    <nav>
+      <div class="nav-wrapper teal darken-4">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="#detailsaboutme"
+              ><i class="material-icons left">account_circle</i>About Me</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio"><i class="material-icons left">apps</i>Work</a>
+          </li>
+          <li>
+            <a href="#contactme"
+              ><i class="material-icons left">connect_without_contact</i>Contact
+              Me</a
+            >
+          </li>
         </ul>
+      </div>
     </nav>
+    <!-- Navbar Medium down-->
+    <ul class="sidenav teal darken-2" id="mobile-demo">
+      <li>
+        <a href="#detailsaboutme"
+          ><i class="material-icons left">account_circle</i>About Me</a
+        >
+      </li>
+      <li>
+        <a href="#portfolio"><i class="material-icons left">apps</i>Work</a>
+      </li>
+      <li>
+        <a href="#contactme"
+          ><i class="material-icons left">connect_without_contact</i>Contact
+          Me</a
+        >
+      </li>
+    </ul>
 
     <section class="pagecontent">
-        <!--Section About Me-->
-        <article class="about-me">
+      <!--Section About Me-->
+      <div id="detailsaboutme" class="container">
+        <h2>Hello & Welcome</h2>
+        <div class="row s12 m6 l6">
+          <div class="col">
             <img
               src="./assets/images/profilepicture.jpg"
               alt="picture of Lars Euler"
-              class="float-left"
+              id="picture"
             />
-            <div id="detailsaboutme">
-                <h2>About Me</h2>
-                <p>
-                Hello and Welcome to my Page. <br>
-                My Name is <span class="highlight">Lars Euler</span>. I am <span class="highlight">based in Berlin</span> and currently working as a <span class="highlight">Senior Strategy & Innovation Consultant at SAP</span>. I spent the last 5 years of
-                my professional career as a internal Consultant coaching frameworks to
-                </p>
-                <ul class="list">
-                    <li>understand, define and prioritize customer needs</li>
-                    <li>build frictionless customer experiences</li>
-                    <li>build scalable and sustainable business models</li>
-                    <li>manage an innovation portfolio and de-risk ideas</li>
-                    <li>work and set goals in an iterative, feedback-driven way</li>
-                    <li>set up an innovation culture for sustainable growth</li>
-                </ul>
-                <p>by combining methodical knowledge with cognitive science and change management.</p>
-                <p>I felt the need to build viable prototypes on my own. So I signed up for the 
-                <span class="highlight">ESMT Coding Bootcamp</span>. 
-                This page became reality as one of the projects during the bootcamp. Feel free to take a look at the portfolio projects I created so far or contact me through one of my channels.<br>
-                <br>Looking forward to the exchange<br><br>
-                <span class="highlight" id="signing">Lars</span>
-                </p>
-            </div>
-        </article>
+          </div>
+          <div class="col s12 m6 l6 left-align">
+            <p>
+              My Name is <span class="highlight">Lars Euler</span>. I am based
+              in Berlin and currently working as a Senior Strategy & Innovation
+              Consultant at SAP. I spent the last five years of my professional
+              career as an internal consultant coaching frameworks to validate,
+              test and iterate ideas and build meaningful products for business
+              customers.
+            </p>
 
-        <!--Section My Work-->
-        <h2 id="portfolio">Portfolio Work</h2>
-        <div class="mywork">
-            <!--SURF Report-->
-            <div id="surfreport">
-                <div class="cardtitle">
-                    <h3>Surf Report</h3>
-                    <p>MERN Stack</p>
-                </div>
-            </div>
-
-            <!--LED Wall-->
-            <div id="ledwall">
-                <div class="cardtitle">
-                    <h3>LED Wall</h3>
-                    <p>Node/Iot</p>
-                </div>
-            </div>
-
-            <!--Calculator-->
-            <div id="calculator">
-                <div class="cardtitle">
-                    <h3>Calculator</h3>
-                    <p>React/JavaScript/CSS</p>
-                </div>
-            </div>
-
-            <!--Puzzle-->
-            <div id="puzzle">
-                <div class="cardtitle">
-                    <h3>Pastel Puzzels</h3>
-                    <p>MERN Stacks</p>
-                </div>
-            </div>
-
-            <!--Run Buddy-->
-            <div id="run">
-                <div class="cardtitle">
-                    <h3>Run Buddy</h3>
-                    <p>HTML/CSS</p>
-                </div>
-            </div>           
-
+            <p>
+              I felt the need to build viable prototypes on my own. So I signed
+              up for the
+              <span class="highlight">ESMT Coding Bootcamp cohort 21/22</span>.
+              This page became reality as one of the projects during the
+              bootcamp. Feel free to browse through the projects I created so
+              far or check out my LinkedIn Profile for detailed background
+              information.<br />
+              <br />Looking forward to the exchange<br /><br />
+              <span class="highlight" id="signing">Lars</span>
+            </p>
+          </div>
         </div>
-        
-        <!--Section Contact Me-->
-        <article id="contact-me">
-            <nav class="navigation">
-                <h2 id="contactme">Contact Me</h2>
-                <ul>
-                    <li><a href="mailto:eulerlars@gmail.com">Mail</a></li>
-                    <li><a href="https://www.linkedin.com/in/larseuler/">LinkedIn</a></li>
-                    <li><a href="https://github.com/laeuler">GitHub</a></li>
-                </ul>
-            </nav>
+      </div>
 
-        </article>
+      <!--Section My Work-->
+      <h2 class="hide white-text teal darken-4" id="portfolio">
+        <i class="medium material-icons left">apps</i>Work
+      </h2>
 
+      <!-- Cards to display my work -->
+      <div class="container row">
+        <!-- Work Day Scheduler -->
+        <div class="cardview col s12 m6 row">
+          <div class="card z-depth-3">
+            <div class="card-image">
+              <img src="./assets/images/WorkDayScheduler.png" />
+            </div>
+            <div class="card-content white-text blue-grey darken-4">
+              <span class="card-title">Work Day Scheduler</span>
+              <p>
+                Simple webpage helping you to maintain focus through hourly
+                scheduling. Created with HTML, CSS and JavaScript, leveraging
+                local memory.
+              </p>
+            </div>
+            <div class="card-action">
+              <a
+                class="teal-text text-darken-4"
+                target="_blank"
+                href="https://laeuler.github.io/work-day-scheduler/"
+                >Live Page</a
+              >
+              <a
+                class="teal-text text-darken-4"
+                target="_blank"
+                href="https://github.com/laeuler/work-day-scheduler"
+                >GitHub Repo</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Password Generator -->
+        <div class="cardview col s12 m6 row">
+          <div class="card z-depth-3">
+            <div class="card-image">
+              <img src="./assets/images/PasswordGenerator.png" />
+            </div>
+            <div class="card-content white-text blue-grey darken-4">
+              <span class="card-title">Password Generator</span>
+              <p>
+                Create a password with up to 128 characters and choose whether
+                to include lower case, upper case, numbers, and special
+                characters. Created with HTML, CSS, and JavaScript.
+              </p>
+            </div>
+            <div class="card-action">
+              <a
+                class="teal-text text-darken-4"
+                target="_blank"
+                href="https://laeuler.github.io/password-generator/"
+                >Live Page</a
+              >
+              <a
+                class="teal-text text-darken-4"
+                target="_blank"
+                href="https://github.com/laeuler/password-generator"
+                >GitHub Repo</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Section Contact Me-->
+      <nav class="teal darken-4">
+        <div id="contactme" class="nav-wrapper">
+          <ul class="right">
+            <li>
+              <a target="_blank" href="mailto:eulerlars@gmail.com"
+                ><i class="material-icons left">email</i>Mail</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/in/larseuler/"
+                ><i class="material-icons left">group_add</i>LinkedIn</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/laeuler"
+                ><i class="material-icons left">developer_mode</i>GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </section>
-</body>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
